@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@keyframes auroraPurple {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(120px, -80px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes auroraBlue {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-100px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.aurora-purple {
+  animation: auroraPurple 22s ease-in-out infinite;
+}
+
+.aurora-blue {
+  animation: auroraBlue 26s ease-in-out infinite;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes glow {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.animate-glow {
+  animation: glow 10s ease-in-out infinite;
+}
+
+.animate-glow-delay {
+  animation: glow 12s ease-in-out infinite;
+}
+
+
+body {
+  background: black;
+}
+
+body {
+  cursor: auto;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes liquidSheen {
+  0% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-liquid-sheen {
+  animation: liquidSheen 18s ease-in-out infinite;
+}
