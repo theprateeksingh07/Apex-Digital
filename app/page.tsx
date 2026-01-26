@@ -6,7 +6,6 @@
 
 import CameraScene from "@/components/CameraScene";
 import { useState, useRef } from "react";
-import Image from "next/image";
 import MagneticButton from "@/components/MagneticButton";
 import {
   motion,
