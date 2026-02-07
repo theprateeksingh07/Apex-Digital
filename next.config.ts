@@ -2,8 +2,8 @@
 const nextConfig = {
   output: "export",
 
-  basePath: "/apex-digital",
-  assetPrefix: "/apex-digital/",
+  // basePath: "/",
+  // assetPrefix: "/",
 
   images: {
     unoptimized: true,
